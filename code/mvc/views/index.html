@@ -1,0 +1,20 @@
+$def with (result)
+<div class="container-fluid">
+    <h1>ML Supervisado-Regresión Lineal</h1>
+    <form method="POST">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">X</label>
+        </div>
+        <div class="col-auto">
+                <input type="number" id="x" class="form-control" name="x">
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-primary" type="submit" value="Predecir">Predecir</button>
+        </div>
+    </form>
+    <h4 class="text-success">
+        $if result!=None:
+            $result
+    </h4>
+</div>
